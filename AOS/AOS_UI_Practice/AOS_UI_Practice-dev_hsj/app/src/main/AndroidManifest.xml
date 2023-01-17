@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.aos_ui_practice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AOS_UI_Practice"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity
+            android:name=".recyclerview.RecyclerView_Use_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview.RecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".webview.WebView_LoadUrl_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".webview.WebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".radiobutton.RadioButton_Use_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".radiobutton.RadioButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".scrollview.ScrollView_Use_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".scrollview.ScrollViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".switchView.Switch_Check_Status_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".switchView.SwitchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".imageview.ImageView_LayoutGravity_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".imageview.ImageView_Image_Show_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".imageview.ImageViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".checkbox.CheckBox_DrawableRight_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".checkbox.CheckBox_Text_Show_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".checkbox.CheckBoxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".button.Button_LayoutGravity_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".button.Button_Background_Color_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".button.Button_Font_Color_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".button.Button_Text_Show_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".button.Button_Gravity_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".button.Button_Width_and_Height_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".button.ButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".edittext.EditText_BackgroundTint_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".edittext.EditText_Hint_Font_Color_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".edittext.EditText_Hint_Show_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".edittext.EditTextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".textview.TextView_MaxLine_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".textview.TextView_Font_Color_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".textview.TextView_FontSize_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".textview.TextView_Show_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".textview.TextView_Gravity_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".textview.TextViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layout.LinearLayout_BackgroundColor_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".layout.LinearLayout_Weight_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".layout.LinearLayout_Horizontal_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".layout.LinearLayout_Vertical_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".layout.LinearLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayoutBasic"
+    android:orientation="vertical">
+    <!--    레이아웃 세로-->
+
+    <!--    레이아웃 기본-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요"
+        android:background="@color/teal_200"/>
+    <!--    text : 텍스트 메시지
+            background 배경색 지정-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요"
+        android:background="@color/teal_200"
+        android:layout_margin="20dp"/>
+    <!--    margin : 부모로부터 여백 (상하좌우) 20dp-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요"
+        android:background="@color/teal_200"
+        android:layout_gravity="center"/>
+    <!--    layout_gravity : 부모 안에서, center : 가운데 정렬-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요"
+        android:background="@color/teal_200"
+        android:layout_margin="10dp"
+        android:gravity="center"/>
+    <!--    gravity : 자신 안에서, center : 가운데 정렬-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요"
+        android:background="@color/teal_200"
+        android:padding="20dp"/>
+    <!--    padding : 자신에서부터 여백 (상하좌우) 20dp-->
+
+    <TextView
+        android:id="@+id/tvColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요"
+        android:background="@color/teal_200"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:textSize="30sp"/>
+    <!--    textSize : 글자 크기 30sp
+            sp : 텍스트의 크기를 지정하기 위해 사용하는 단위
+            dp : 레이아웃 치수나 위치를 지정하기 위해 사용하는 단위-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요"
+        android:background="@color/teal_200"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="10sp"
+        android:autoSizeMaxTextSize="30sp"/>
+    <!--    autoSizeTextType : 글자크기 자동조절
+            최소 글자 크기 10sp, 최대 글자 크기 30sp-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요"
+        android:background="@color/teal_200"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:textStyle="bold"/>
+    <!--    textStyle : 텍스트 스타일 지정, bold : 굵게-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal_200"
+        android:orientation="horizontal">
+        <!--    레이아웃 가로, 레이아웃 배경색 지정-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="안녕하세요"
+            android:background="@color/teal_700"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <!--    weight : 가로 세로 비율 지정
+                디바이스의 크기에 제한없이 Layout 표현-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="안녕하세요"
+            android:background="@color/black"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+        <!--    textColor : 텍스트 색상 변경-->
+
+    </LinearLayout>
+
+</LinearLayout>

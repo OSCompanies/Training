@@ -1,0 +1,23 @@
+package com.na_ram.aos_fragment
+
+import android.os.Bundle
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+
+class SubActivity: AppCompatActivity() {
+
+    private val tvInformation : TextView by lazy {
+        findViewById(R.id.tvInformation)
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_sub)
+
+        val id = intent.getIntExtra("id", 0)
+
+        tvInformation.text = "Last Fragment ID : $id"
+
+    }
+
+}

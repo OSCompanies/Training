@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <!-- xml에서 속성 추가하기 -->
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:showText="true"
+        android:switchMinWidth="60dp"
+        android:text="전원"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textOff="Off"
+        android:textOn="On"
+        android:thumbTextPadding="20dp"
+        android:thumbTint="@color/purple_500"
+        android:trackTint="#BB86FC" />
+
+    <!-- Kotlin 코드로 커스텀하기 -->
+<!--    <Switch-->
+<!--        android:id="@+id/swSwitch"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:switchMinWidth="60dp"-->
+<!--        android:text="전원"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="17sp"-->
+<!--        android:thumbTextPadding="20dp"/>-->
+
+    <!-- Switch image로 커스텀하기 -->
+<!--    <Switch-->
+<!--        android:id="@+id/swSwitch"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:switchMinWidth="60dp"-->
+<!--        android:text="전원"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="17sp"-->
+<!--        android:thumbTextPadding="20dp"-->
+<!--        android:thumb="@drawable/switch_xml_thumb_custom"-->
+<!--        android:track="@drawable/switch_xml_track_custom"/>-->
+
+    <!-- Switch xml로 커스텀하기 -->
+    <Switch
+        android:id="@+id/swSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="60dp"
+        android:text="전원"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:thumbTextPadding="20dp"
+        android:thumb="@drawable/switch_xml_thumb_custom"
+        android:track="@drawable/switch_xml_track_custom"/>
+
+    <TextView
+        android:id="@+id/tvSwitchOnOff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

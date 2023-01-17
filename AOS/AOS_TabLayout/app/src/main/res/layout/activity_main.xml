@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tlTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicator="@drawable/ic_tab_indicator_24"
+        app:tabIndicatorColor="#FFBBBB"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorGravity="bottom"
+        app:tabIndicatorHeight="20dp"
+        app:tabSelectedTextColor="#FFBBBB"
+        app:tabTextColor="@color/black">
+
+        <!-- icon이 없는 TabItem -->
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tiTab1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PINK" />
+
+        <!-- icon이 있는 TabItem -->
+        <!--        <com.google.android.material.tabs.TabItem-->
+        <!--            android:id="@+id/tiTab1"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:icon="@drawable/ic_icon_pink_24"-->
+        <!--            android:text="PINK" />-->
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tiTab2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BLUE" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- TabLayout 기본적인 사용법 -->
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/flFragmentContainer"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent" />-->
+
+    <!-- ViewPager2를 이용한 TabLayout 사용법 -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpViewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

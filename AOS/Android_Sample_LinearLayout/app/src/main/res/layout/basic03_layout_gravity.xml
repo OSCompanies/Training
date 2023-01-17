@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 리니어레이아웃을 세로방향으로 지정-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기본위치"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="중앙정렬"/>
+    <!-- 세로방향을 지정된 리니어 레이아웃에
+        순차적으로 버튼이 배치되면서 레이아웃의 중앙에 정렬-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="우측정렬"/>
+    <!-- 리니어레이아웃의 우측에 정렬-->
+
+</LinearLayout>

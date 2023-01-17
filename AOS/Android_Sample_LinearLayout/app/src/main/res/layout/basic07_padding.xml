@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 리니어레이아웃을 세로방향으로 지정-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="위측 패딩"
+        android:background="@color/yellow"
+        android:paddingTop="50dp"/>
+    <!-- 텍스트뷰 테두리 상단에서 text까지의 여백 50dp 지정-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좌측 패딩"
+        android:background="@color/blue"
+        android:paddingLeft="50dp"/>
+    <!-- 텍스트뷰 테두리 좌측에서 text까지의 여백 50dp 지정-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아래측 패딩"
+        android:background="@color/green"
+        android:paddingBottom="50dp"/>
+    <!-- 텍스트뷰 테두리 하단에서 text까지의 여백 50dp 지정-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="우측 패딩"
+        android:background="@color/orange"
+        android:paddingRight="50dp"/>
+    <!-- 텍스트뷰 테두리 우측에서 text까지의 여백 50dp 지정-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전체 패딩"
+        android:background="@color/teal_200"
+        android:padding="50dp"/>
+    <!-- 텍스트뷰 테두리에서 text까지의 여백 50dp 지정-->
+
+</LinearLayout>

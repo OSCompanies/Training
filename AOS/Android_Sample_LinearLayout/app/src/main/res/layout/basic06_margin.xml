@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 리니어레이아웃을 세로방향으로 지정-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="위측 마진"
+        android:layout_marginTop="50dp"/>
+    <!-- 레이아웃의 상단부터 버튼까지의 여백 50dp 지정-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아래측 마진"
+        android:layout_marginBottom="50dp"/>
+    <!-- 버튼에서부터 버튼하단까지의 여백 50dp 지정-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="좌측 마진"
+        android:layout_marginLeft="50dp"/>
+    <!-- 레이아웃의 좌측부터 버튼까지의 여백 50dp 지정-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="우측 마진"
+        android:layout_marginRight="50dp"/>
+    <!-- 레이아웃의 우측부터 버튼까지의 여백 50dp 지정-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="전체 마진"
+        android:layout_margin="50dp"/>
+    <!-- 버튼으로부터 버튼 상하좌우까지의 여백 50dp 지정-->
+
+
+</LinearLayout>

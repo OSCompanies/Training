@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditText"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <EditText
+        android:id="@+id/etEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="텍스트 입력"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/etButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="입력하기"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/etTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전달된 데이터"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/etTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="입력한 데이터"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+</LinearLayout>

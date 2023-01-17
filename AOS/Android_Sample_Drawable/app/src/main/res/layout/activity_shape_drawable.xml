@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShapeDrawable"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_custom"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+    <!-- 커스텀 파일-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_oval"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+    <!-- 원 모양 지정 파일-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+    <!-- 직각사각형 모양 지정 파일-->
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    android:layout_margin="20dp"
+    android:gravity="center">
+
+    <Spinner
+        android:id="@+id/planets_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <!-- 사용할 스피너 만들기-->
+
+    <TextView
+        android:id="@+id/mTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="선택된 행성"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:textSize="20sp"/>
+    <!-- 스피너를 선택했을때 출력할 텍스트뷰-->
+
+</LinearLayout>

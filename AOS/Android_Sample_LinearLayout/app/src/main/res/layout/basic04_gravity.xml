@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 리니어레이아웃을 세로방향으로 지정-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="기본위치"
+        android:background="@color/teal_200"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="중앙정렬"
+        android:background="@color/blue"
+        android:gravity="center"/>
+    <!-- 텍스트뷰 내부에서 중앙에 정렬-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="우측정렬"
+        android:background="@color/yellow"
+        android:gravity="end"/>
+    <!-- 텍스트뷰 내부에서 우측에 정렬-->
+
+</LinearLayout>

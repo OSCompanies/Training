@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextView"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:background="@color/teal_200"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <Button
+            android:id="@+id/btRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RED"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/btBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BLUE"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/btGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GREEN"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

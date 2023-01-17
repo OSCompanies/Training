@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".layout.LinearLayoutActivity">
+
+
+    <Button
+        android:id="@+id/btnVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가로 배치" />
+
+    <Button
+        android:id="@+id/btnhorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="세로 배치" />
+
+    <Button
+        android:id="@+id/btnWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비율 배치" />
+
+    <Button
+        android:id="@+id/btnBackgroundColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="배경색상" />
+
+
+</LinearLayout>

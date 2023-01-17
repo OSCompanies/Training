@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavFragment"
+    android:orientation="vertical"
+    android:background="@color/green">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이동된 프래그먼트입니다."
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NavFragment"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btMoveNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="프래그먼트에서 다른 프래그먼트로 이동하기"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/navContainer"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"/>
+        <!-- name 속성은 NavHost 구현의 클래스 이름을 포함-->
+        <!-- defaultNavHost 속성을 사용시 시스템의 뒤로가기 사용 가능-->
+        <!-- navGraph 속성은 NavHostFragment를 탐색 그래프와 연결-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/nav_bottom"/>
+        <!-- menu에 생성한 menu 결합-->
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 쉐이프 드로어블 : 간단하게 도형을 그릴 수 있는 드로어블, 커스텀-->
+
+    <size
+        android:width="100dp"
+        android:height="100dp"/>
+    <!-- size : 도형의 크기를 지정한다.-->
+
+    <stroke
+        android:width="1dp"
+        android:color="@color/black"/>
+    <!-- stroke : 도형의 테두리를 지정한다.
+            두께는 1dp, 색상은 black-->
+
+    <solid
+        android:color="@color/teal_200"/>
+    <!-- solid : 도형의 내부 채우기
+            색상은 teal_@00-->
+
+    <padding
+        android:top="1dp"/>
+    <!-- padding : 도형 안쪽의 여백
+            top : 도형 안쪽 위 여백 1dp-->
+
+    <corners
+        android:radius="30dp"/>
+    <!-- corners : 도형의 모서리를 지정한다.
+            radius (상하좌우) : 모서리 라운딩 30dp, 속성값이 클수록 모서리가 더 둥글어진다.-->
+
+</shape>

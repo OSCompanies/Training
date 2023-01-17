@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".textview.TextViewActivity">
+
+
+    <Button
+        android:id="@+id/btnGravity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="정렬" />
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="텍스트 화면표시" />
+
+    <Button
+        android:id="@+id/btnFontSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="글자크기" />
+
+    <Button
+        android:id="@+id/btnFontColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="글자색" />
+
+    <Button
+        android:id="@+id/btnMaxLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최대라인 표시 수" />
+
+</LinearLayout>

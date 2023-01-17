@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LinearLayout" />
+
+    <Button
+        android:id="@+id/btnTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EditText" />
+
+    <Button
+        android:id="@+id/btnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/btnImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ImageView" />
+
+    <Button
+        android:id="@+id/btnCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox" />
+
+    <Button
+        android:id="@+id/btnRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Radio Button" />
+
+    <Button
+        android:id="@+id/btnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch" />
+
+    <Button
+        android:id="@+id/btnWebView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WebView" />
+
+    <Button
+        android:id="@+id/btnRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView" />
+
+    <Button
+        android:id="@+id/btnScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ScrollView" />
+
+</LinearLayout>

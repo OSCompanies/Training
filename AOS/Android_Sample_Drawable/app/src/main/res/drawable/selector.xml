@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 상태 드로어블 : 특정한 상황에서의 그래픽을 지정하기 위한 드로어블
+            selector : 조건을 지정하여 어떤 상황에 어떤 이미지를 선택할지 정한다.-->
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/starbucks_c"/>
+    <!-- state_pressed="true" 즉, item이 눌려진 상태일 때 해당 이미지를 표지-->
+
+    <item
+        android:drawable="@drawable/starbucks_b"/>
+    <!-- 조건을 지정하지 않은 기본 상태의 이미지-->
+
+</selector>

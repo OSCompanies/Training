@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="전원 On"
+        android:textOff="전원 Off"
+        android:enabled="true"/>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="전원 On"
+        android:textOff="전원 Off"
+        android:clickable="false" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="전원 On"
+        android:textOff="전원 Off"
+        android:textStyle="bold"
+        android:textSize="17sp"/>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="전원 On"
+        android:textOff="전원 Off"
+        android:checked="true"/>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="전원 On"
+        android:textOff="전원 Off"/>
+
+    <ToggleButton
+        android:id="@+id/tbPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ToggleButton
+        android:id="@+id/tbPowerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="전원 On"
+        android:textOff="전원 Off" />
+
+    <TextView
+        android:id="@+id/tvInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <ToggleButton
+        android:id="@+id/tbPowerImageButton"
+        android:layout_width="100dp"
+        android:layout_height="95dp"
+        android:textColor="@color/white"
+        android:background="@drawable/toggle_image_custom"/>
+
+    <ToggleButton
+        android:id="@+id/tbPowerXmlButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/toggle_xml_custom"/>
+
+</LinearLayout>

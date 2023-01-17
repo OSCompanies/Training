@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".button.ButtonActivity">
+
+
+    <Button
+        android:id="@+id/btnWidth_and_Height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="너비/높이 설정" />
+
+    <Button
+        android:id="@+id/btnGravity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="뷰 내부를 정렬" />
+
+    <Button
+        android:id="@+id/btnLayoutGravity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="상위 뷰 기준으로 정렬" />
+
+    <Button
+        android:id="@+id/btnTextShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="텍스트 화면표시" />
+
+    <Button
+        android:id="@+id/btnFontSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="글자크기" />
+
+    <Button
+        android:id="@+id/btnFontColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="글자색" />
+
+    <Button
+        android:id="@+id/btnBackgroundColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="배경색" />
+
+
+
+</LinearLayout>

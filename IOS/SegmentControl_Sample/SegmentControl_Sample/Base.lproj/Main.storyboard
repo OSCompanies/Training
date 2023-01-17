@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SegmentControl_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jPl-2d-j9O">
+                                <rect key="frame" x="40" y="144" width="334" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="QS2-sC-KLP"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="내 사진"/>
+                                    <segment title="강아지 사진"/>
+                                    <segment title="고양이 사진"/>
+                                </segments>
+                                <connections>
+                                    <action selector="ClickedSement:" destination="BYZ-38-t0r" eventType="valueChanged" id="sQY-ui-0jj"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MfK-cF-fgf">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="JNE-cv-h99"/>
+                                    <constraint firstAttribute="width" constant="300" id="Sxp-RR-7Qu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MfK-cF-fgf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ame-f4-2ru"/>
+                            <constraint firstItem="jPl-2d-j9O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Mkf-Gq-9OG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jPl-2d-j9O" secondAttribute="trailing" constant="40" id="duO-rc-lfM"/>
+                            <constraint firstItem="jPl-2d-j9O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="sro-ND-K3k"/>
+                            <constraint firstItem="MfK-cF-fgf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vkA-Ck-uVI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xZd-Kl-TCc"/>
+                    <connections>
+                        <outlet property="ImageView" destination="MfK-cF-fgf" id="H5f-vv-FHO"/>
+                        <outlet property="SegementControl" destination="jPl-2d-j9O" id="3A0-Vy-QAS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="109"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

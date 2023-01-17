@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Q. 가장 여행가고 싶은 나라는 어디인가요?"
+        android:textSize="17sp"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold" />
+
+    <!-- RadioButton Image Custom -->
+<!--    <RadioGroup-->
+<!--        android:id="@+id/rgCountries"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:checkedButton="@id/rbEngland"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/rbEngland"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="5dp"-->
+<!--            android:button="@drawable/radiobutton_image_custom"-->
+<!--            android:text="영국" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/rbSpain"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="5dp"-->
+<!--            android:button="@drawable/radiobutton_image_custom"-->
+<!--            android:text="스페인" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/rbFrance"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="5dp"-->
+<!--            android:button="@drawable/radiobutton_image_custom"-->
+<!--            android:text="프랑스" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/rbAmerica"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="5dp"-->
+<!--            android:button="@drawable/radiobutton_image_custom"-->
+<!--            android:text="미국" />-->
+
+<!--    </RadioGroup>-->
+
+    <RadioGroup
+        android:id="@+id/rgCountries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/rbEngland"
+        android:orientation="horizontal">
+
+        <!-- RadioButton Shape Custom -->
+        <RadioButton
+            android:id="@+id/rbEngland"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radiobutton_xml_custom"
+            android:button="@null"
+            android:gravity="center"
+            android:text="영국"
+            android:textColor="@drawable/radiobutton_text_custom" />
+
+        <RadioButton
+            android:id="@+id/rbSpain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radiobutton_xml_custom"
+            android:button="@null"
+            android:gravity="center"
+            android:text="스페인"
+            android:textColor="@drawable/radiobutton_text_custom" />
+
+        <RadioButton
+            android:id="@+id/rbFrance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radiobutton_xml_custom"
+            android:button="@null"
+            android:gravity="center"
+            android:text="프랑스"
+            android:textColor="@drawable/radiobutton_text_custom" />
+
+        <RadioButton
+            android:id="@+id/rbAmerica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radiobutton_xml_custom"
+            android:button="@null"
+            android:gravity="center"
+            android:text="미국"
+            android:textColor="@drawable/radiobutton_text_custom" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold" />
+
+</LinearLayout>

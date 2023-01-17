@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Nav View Controller-->
+        <scene sceneID="vgE-Ju-tMo">
+            <objects>
+                <navigationController storyboardIdentifier="NavViewController" id="Aqn-Q2-5yP" customClass="NavViewController" customModule="ChangeView_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B2Y-9V-F81">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="32j-3I-DVW" kind="relationship" relationship="rootViewController" id="khH-8z-id3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pud-Tf-fr6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-293" y="94"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="ipU-W4-ADa">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" id="32j-3I-DVW" customClass="FirstViewController" customModule="ChangeView_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N8W-za-smw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fatty-corgi-wHgkrmuMFOY-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="nQW-uq-yF0">
+                                <rect key="frame" x="47" y="188" width="320" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="L06-mL-zXJ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMz-GQ-ZVy">
+                                <rect key="frame" x="160.5" y="509" width="93" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="화면 이동"/>
+                                <connections>
+                                    <segue destination="Ztg-iu-GGO" kind="show" id="PIs-Gu-6f9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2O-im-qJG">
+                                <rect key="frame" x="20" y="108" width="52" height="30"/>
+                                <state key="normal" title="이전으로"/>
+                                <connections>
+                                    <action selector="AcitonBack:" destination="32j-3I-DVW" eventType="touchUpInside" id="6c6-g0-RMo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pie-2S-NVM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="t2O-im-qJG" firstAttribute="top" secondItem="Pie-2S-NVM" secondAttribute="top" constant="20" id="1ac-mu-fq7"/>
+                            <constraint firstItem="nQW-uq-yF0" firstAttribute="top" secondItem="Pie-2S-NVM" secondAttribute="top" constant="100" id="QY6-D4-jMD"/>
+                            <constraint firstItem="nQW-uq-yF0" firstAttribute="centerX" secondItem="N8W-za-smw" secondAttribute="centerX" id="RU5-xf-Odd"/>
+                            <constraint firstItem="UMz-GQ-ZVy" firstAttribute="centerX" secondItem="N8W-za-smw" secondAttribute="centerX" id="ULN-oW-8DP"/>
+                            <constraint firstItem="t2O-im-qJG" firstAttribute="leading" secondItem="Pie-2S-NVM" secondAttribute="leading" constant="20" id="Wsg-3e-onF"/>
+                            <constraint firstItem="UMz-GQ-ZVy" firstAttribute="top" secondItem="nQW-uq-yF0" secondAttribute="bottom" constant="171" id="aWF-9Y-TeH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ehb-Rw-pOe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LEc-AK-yrS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="571" y="94"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cmj-Sw-TP3">
+            <objects>
+                <viewController id="Ztg-iu-GGO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8qW-XN-XXQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jan-meeus-Hi74NZDTlls-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="BXf-5i-t5G">
+                                <rect key="frame" x="-821" y="188" width="2056" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="x6l-Ju-r95"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="귀여운 오리이미지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TH4-3H-XMO">
+                                <rect key="frame" x="117.5" y="515" width="179" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Sfd-P1-MJv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TH4-3H-XMO" firstAttribute="top" secondItem="BXf-5i-t5G" secondAttribute="bottom" constant="177" id="4E9-me-sby"/>
+                            <constraint firstItem="TH4-3H-XMO" firstAttribute="centerX" secondItem="8qW-XN-XXQ" secondAttribute="centerX" id="9gR-Eh-YC7"/>
+                            <constraint firstItem="BXf-5i-t5G" firstAttribute="top" secondItem="Sfd-P1-MJv" secondAttribute="top" constant="100" id="GsA-dm-Rk8"/>
+                            <constraint firstItem="BXf-5i-t5G" firstAttribute="centerX" secondItem="8qW-XN-XXQ" secondAttribute="centerX" id="ICY-ee-Hbd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="waC-yf-ifW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PhI-eF-V6y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1346" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fatty-corgi-wHgkrmuMFOY-unsplash" width="320" height="213.5"/>
+        <image name="jan-meeus-Hi74NZDTlls-unsplash" width="2055.5" height="1370.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
